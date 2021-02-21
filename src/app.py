@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 PORT = os.getenv("PORT")
-DBINFO = os.getenv("PORT")
+DBINFO = os.getenv("DBINFO")
 
 app = Flask(__name__)
 Base = declarative_base()
