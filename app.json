@@ -1,0 +1,12 @@
+{
+    "name": "sqlmodel",
+    "repository": "https://github.com/bengkkk/sqlmodel",
+    "env": {
+      "DBINFO": {
+        "description": "DBINFO",
+        "value": "DBINFO"
+      }
+    },
+    "website": "https://example.com",
+    "stack": "container"
+  }
