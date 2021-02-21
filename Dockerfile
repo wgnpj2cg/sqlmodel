@@ -8,4 +8,4 @@ RUN apt-get update --fix-missing \
     && apt install -y python3 python3-pip
 RUN pip3 install -r requirements.txt
 
-CMD bash /workarea/start.sh
+CMD /workarea/start.sh
