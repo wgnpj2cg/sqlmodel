@@ -6,9 +6,12 @@ from flask import Flask, request
 from sqlalchemy import Column, String, create_engine, Integer
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+PORT = os.getenv("PORT")
+DBINFO = os.getenv("DBINFO")
+SENTRYDSN = os.getenv("SENTRYDSN")
 
 sentry_sdk.init(
-    dsn="https://9d6fa06d07b34398b3f045c325672f04@o358176.ingest.sentry.io/5854384",
+    dsn=SENTRYDSN,
     integrations=[FlaskIntegration()],
 
     # Set traces_sample_rate to 1.0 to capture 100%
@@ -17,8 +20,7 @@ sentry_sdk.init(
     traces_sample_rate=1.0
 )
 
-PORT = os.getenv("PORT")
-DBINFO = os.getenv("DBINFO")
+
 
 
 app = Flask(__name__)
