@@ -5,7 +5,13 @@
       "DBINFO": {
         "description": "DBINFO",
         "value": "DBINFO"
-      }
+      },
+
+      "SENTRYDSN": {
+        "description": "SENTRYDSN",
+        "value": "SENTRYDSN"
+      },
+
     },
     "website": "https://example.com",
     "stack": "container"
