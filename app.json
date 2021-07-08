@@ -10,8 +10,7 @@
       "SENTRYDSN": {
         "description": "SENTRYDSN",
         "value": "SENTRYDSN"
-      },
-
+      }
     },
     "website": "https://example.com",
     "stack": "container"
