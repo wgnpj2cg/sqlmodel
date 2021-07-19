@@ -74,11 +74,11 @@ def get():
             value = obj.value
             if obj.only_run_once_time == 0:
                 session.close()
-                return str(value)
+                return {'code': 200,'value':str(value)}
             obj.status = 1
             session.commit()
             session.close()
-            return str(value)
+            return {'code': 200,'value':str(value)}
         else:
             session.close()
             return {'code': 400}
